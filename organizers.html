@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Organizers – [WS_NAME]</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .organizers-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 900px;
+      margin: 2rem auto;
+      gap: 2rem;
+    }
+    .organizer-card {
+      text-align: center;
+      width: 140px;
+    }
+    .organizer-card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #002b5c;
+    }
+    .organizer-name {
+      font-weight: bold;
+      margin: 0.5rem 0 0.2rem 0;
+      font-size: 0.95rem;
+    }
+    .organizer-affiliation {
+      font-size: 0.85rem;
+      color: #555;
+      margin: 0;
+    }
+    @media(max-width:600px){
+      .organizer-card { width: 45%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>[WS_NAME] — Organizers</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="program.html">Program</a>
+      <a href="speakers.html">Speakers</a>
+      <a href="submission.html">Submission</a>
+      <a href="organizers.html">Organizers</a>
+    </nav>
+  </header>
+
+  <main class="organizers-container">
+    <div class="organizer-card">
+      <img src="images/organizer1.jpg" alt="Dr. Jane Doe">
+      <p class="organizer-name">Dr. Jane Doe</p>
+      <p class="organizer-affiliation">University of Michigan</p>
+    </div>
+    <div class="organizer-card">
+      <img src="images/organizer2.jpg" alt="Dr. John Roe">
+      <p class="organizer-name">Dr. John Roe</p>
+      <p class="organizer-affiliation">TU Munich</p>
+    </div>
+    <div class="organizer-card">
+      <img src="images/organizer3.jpg" alt="Dr. Emily Zhang">
+      <p class="organizer-name">Dr. Emily Zhang</p>
+      <p class="organizer-affiliation">University of Tokyo</p>
+    </div>
+    <!-- Add more organizers as needed -->
+  </main>
+
+  <footer>
+    © 2025 [WS_NAME]
+  </footer>
+</body>
+</html>

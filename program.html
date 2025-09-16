@@ -1,14 +1,47 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Program – Workshop on Robotics & AI</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Program – [WS_NAME]</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Small additions to keep the schedule tidy and responsive */
+    .schedule {
+      max-width: 900px;
+      margin: 1.5rem auto;
+      padding: 0 1rem;
+    }
+    .schedule h2 { margin-bottom: 0.5rem; }
+    table.schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    table.schedule-table th,
+    table.schedule-table td {
+      padding: 0.6rem 0.75rem;
+      vertical-align: top;
+      border-bottom: 1px solid #e6e6e6;
+      text-align: left;
+      word-wrap: break-word;
+    }
+    table.schedule-table th.time-col { width: 10ch; }
+    table.schedule-table th.duration-col { width: 12ch; }
+    tr.session-group { background: #fafafa; font-weight: bold; }
+    .notes { font-size: 0.95em; color: #555; }
+    @media (max-width:600px){
+      table.schedule-table th.duration-col { display: none; }
+      table.schedule-table td.duration-col { display: none; }
+      table.schedule-table th.time-col { width: 8ch; }
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Program</h1>
+    <h1>[WS_NAME] — Program</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="program.html">Program</a>
@@ -18,22 +51,148 @@
     </nav>
   </header>
 
-  <main>
-    <h2>Schedule</h2>
-    <ul>
-      <li><strong>09:00</strong> – Welcome & Opening Remarks</li>
-      <li><strong>09:15</strong> – Invited Talk: Prof. Alice Smith</li>
-      <li><strong>10:00</strong> – Invited Talk: Dr. Bob Jones</li>
-      <li><strong>11:00</strong> – Coffee Break</li>
-      <li><strong>11:30</strong> – Panel Discussion</li>
-      <li><strong>13:00</strong> – Posters & Demos</li>
-      <li><strong>15:30</strong> – Closing</li>
-    </ul>
+  <main class="schedule">
+    <h2>Schedule (Draft)</h2>
+
+    <table class="schedule-table" aria-describedby="schedule-desc">
+      <caption id="schedule-desc" class="notes">All times local. Durations include Q/A when indicated.</caption>
+      <thead>
+        <tr>
+          <th class="time-col">Time</th>
+          <th>Session / Title</th>
+          <th class="duration-col">Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><time>08:30</time></td>
+          <td>
+            Greetings and Introduction of the Workshop
+          </td>
+          <td class="duration-col">15 min</td>
+        </tr>
+
+        <tr class="session-group">
+          <td colspan="3">Morning Session: Insights and Experience from Real Planetary Rover Missions</td>
+        </tr>
+
+        <tr>
+          <td><time>09:00</time></td>
+          <td>
+            Invited Talk — Lukas Burkhard (MMX) <span class="notes">[CONFIRMED]</span>
+          </td>
+          <td class="duration-col">25 min + 5 min Q/A</td>
+        </tr>
+
+        <tr>
+          <td><time>09:30</time></td>
+          <td>
+            Invited Talk — Jean-Pierre de la Croix (CADRE / Endurance)
+          </td>
+          <td class="duration-col">25 min + 5 min Q/A</td>
+        </tr>
+
+        <tr>
+          <td><time>10:00</time></td>
+          <td>
+            Coffee Break and Poster Session
+          </td>
+          <td class="duration-col">60 min</td>
+        </tr>
+
+        <tr>
+          <td><time>11:00</time></td>
+          <td>
+            Invited Talk — Masahiro Ono (NASA / JPL — EELS block) <span class="notes">[CONFIRMED]</span>
+          </td>
+          <td class="duration-col">25 min + 5 min Q/A</td>
+        </tr>
+
+        <tr>
+          <td><time>11:30</time></td>
+          <td>
+            Invited Talk — (Chandrayaan 4? / Rasheed-2) or legged-related (SubT / CSIRO). Suggested: Hutter or recommended speaker.
+          </td>
+          <td class="duration-col">25 min + 5 min Q/A</td>
+        </tr>
+
+        <tr>
+          <td><time>12:00</time></td>
+          <td>
+            Contributed Papers — Spotlight Talks
+          </td>
+          <td class="duration-col">30 min</td>
+        </tr>
+
+        <tr>
+          <td><time>12:30</time></td>
+          <td>
+            Lunch
+          </td>
+          <td class="duration-col">—</td>
+        </tr>
+
+        <tr class="session-group">
+          <td colspan="3">Afternoon Session: Addressing the Perceptual Challenge</td>
+        </tr>
+
+        <tr>
+          <td><time>13:30</time></td>
+          <td>
+            Invited Talk — Annika Thomas <span class="notes">[CONFIRMED]</span>
+          </td>
+          <td class="duration-col">25 min + 5 min Q/A</td>
+        </tr>
+
+        <tr>
+          <td><time>14:00</time></td>
+          <td>
+            Invited Talk — Davide Scaramuzza <span class="notes">[CONFIRMED]</span>
+          </td>
+          <td class="duration-col">25 min + 5 min Q/A</td>
+        </tr>
+
+        <tr>
+          <td><time>14:30</time></td>
+          <td>
+            Invited Talk — Tim Barfoot <span class="notes">[CONFIRMED]</span>
+          </td>
+          <td class="duration-col">25 min + 5 min Q/A</td>
+        </tr>
+
+        <tr>
+          <td><time>15:00</time></td>
+          <td>
+            Coffee Break and Poster Session <span class="notes">TODO: Carol</span>
+          </td>
+          <td class="duration-col">60 min</td>
+        </tr>
+
+        <tr>
+          <td><time>16:00</time></td>
+          <td>
+            Panel Discussion
+          </td>
+          <td class="duration-col">60 min</td>
+        </tr>
+
+        <tr>
+          <td><time>17:00</time></td>
+          <td>
+            Closing Remarks
+          </td>
+          <td class="duration-col">10 min</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="notes" style="margin-top:0.75rem;">
+      Note: times and speakers are subject to change. Durations include Q/A when specified.
+    </p>
   </main>
 
   <footer>
-    © 2025 Workshop on Robotics & AI – Part of ICRA 2025
+    © 2025 [WS_NAME]
   </footer>
 </body>
 </html>
-
