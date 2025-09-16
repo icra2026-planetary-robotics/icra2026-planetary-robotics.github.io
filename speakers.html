@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Speakers – [WS_NAME]</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .speakers-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 900px;
+      margin: 2rem auto;
+      gap: 2rem;
+    }
+    .speaker-card {
+      text-align: center;
+      width: 140px;
+    }
+    .speaker-card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #002b5c;
+    }
+    .speaker-name {
+      font-weight: bold;
+      margin: 0.5rem 0 0.2rem 0;
+      font-size: 0.95rem;
+    }
+    .speaker-affiliation {
+      font-size: 0.85rem;
+      color: #555;
+      margin: 0;
+    }
+    @media(max-width:600px){
+      .speaker-card { width: 45%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>[WS_NAME] — Speakers</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="program.html">Program</a>
+      <a href="speakers.html">Speakers</a>
+      <a href="submission.html">Submission</a>
+      <a href="organizers.html">Organizers</a>
+    </nav>
+  </header>
+
+  <main class="speakers-container">
+    <div class="speaker-card">
+      <img src="images/speaker1.jpg" alt="Lukas Burkhard">
+      <p class="speaker-name">Lukas Burkhard</p>
+      <p class="speaker-affiliation">MMX Mission</p>
+    </div>
+    <div class="speaker-card">
+      <img src="images/speaker2.jpg" alt="Jean-Pierre de la Croix">
+      <p class="speaker-name">Jean-Pierre de la Croix</p>
+      <p class="speaker-affiliation">CADRE / Endurance</p>
+    </div>
+    <div class="speaker-card">
+      <img src="images/speaker3.jpg" alt="Masahiro Ono">
+      <p class="speaker-name">Masahiro Ono</p>
+      <p class="speaker-affiliation">NASA / JPL</p>
+    </div>
+    <div class="speaker-card">
+      <img src="images/speaker4.jpg" alt="Hutter">
+      <p class="speaker-name">Hutter</p>
+      <p class="speaker-affiliation">CSIRO / SubT</p>
+    </div>
+    <div class="speaker-card">
+      <img src="images/speaker5.jpg" alt="Annika Thomas">
+      <p class="speaker-name">Annika Thomas</p>
+      <p class="speaker-affiliation">[Affiliation]</p>
+    </div>
+    <div class="speaker-card">
+      <img src="images/speaker6.jpg" alt="Davide Scaramuzza">
+      <p class="speaker-name">Davide Scaramuzza</p>
+      <p class="speaker-affiliation">[Affiliation]</p>
+    </div>
+    <div class="speaker-card">
+      <img src="images/speaker7.jpg" alt="Tim Barfoot">
+      <p class="speaker-name">Tim Barfoot</p>
+      <p class="speaker-affiliation">[Affiliation]</p>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 [WS_NAME]
+  </footer>
+</body>
+</html>

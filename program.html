@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +6,6 @@
   <title>Program – [WS_NAME]</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Small additions to keep the schedule tidy and responsive */
     .schedule {
       max-width: 900px;
       margin: 1.5rem auto;
@@ -29,12 +26,19 @@
       word-wrap: break-word;
     }
     table.schedule-table th.time-col { width: 10ch; }
-    table.schedule-table th.duration-col { width: 12ch; }
     tr.session-group { background: #fafafa; font-weight: bold; }
-    .notes { font-size: 0.95em; color: #555; }
+    .time {
+      font-weight: bold;
+    }
+    .speaker-name {
+      font-weight: bold;
+      margin-bottom: 0.2rem;
+    }
+    .talk-title {
+      font-style: italic;
+      margin: 0;
+    }
     @media (max-width:600px){
-      table.schedule-table th.duration-col { display: none; }
-      table.schedule-table td.duration-col { display: none; }
       table.schedule-table th.time-col { width: 8ch; }
     }
   </style>
@@ -55,140 +59,136 @@
     <h2>Schedule (Draft)</h2>
 
     <table class="schedule-table" aria-describedby="schedule-desc">
-      <caption id="schedule-desc" class="notes">All times local. Durations include Q/A when indicated.</caption>
+      <caption id="schedule-desc" class="notes">All times local.</caption>
       <thead>
         <tr>
           <th class="time-col">Time</th>
-          <th>Session / Title</th>
-          <th class="duration-col">Duration</th>
+          <th>Session / Speaker</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><time>08:30</time></td>
+          <td class="time">08:30</td>
           <td>
-            Greetings and Introduction of the Workshop
+            <span class="speaker-name">Workshop Opening</span><br>
+            <span class="talk-title">Welcome and Introduction</span>
           </td>
-          <td class="duration-col">15 min</td>
         </tr>
 
         <tr class="session-group">
-          <td colspan="3">Morning Session: Insights and Experience from Real Planetary Rover Missions</td>
+          <td colspan="2">Morning Session: Insights and Experience from Real Planetary Rover Missions</td>
         </tr>
 
         <tr>
-          <td><time>09:00</time></td>
+          <td class="time">09:00</td>
           <td>
-            Invited Talk — Lukas Burkhard (MMX) <span class="notes">[CONFIRMED]</span>
+            <span class="speaker-name">Lukas Burkhard (MMX)</span><br>
+            <span class="talk-title">[Confirmed]</span>
           </td>
-          <td class="duration-col">25 min + 5 min Q/A</td>
         </tr>
 
         <tr>
-          <td><time>09:30</time></td>
+          <td class="time">09:30</td>
           <td>
-            Invited Talk — Jean-Pierre de la Croix (CADRE / Endurance)
+            <span class="speaker-name">Jean-Pierre de la Croix (CADRE/Endurance)</span><br>
+            <span class="talk-title">[Confirmed]</span>
           </td>
-          <td class="duration-col">25 min + 5 min Q/A</td>
         </tr>
 
         <tr>
-          <td><time>10:00</time></td>
+          <td class="time">10:00</td>
           <td>
-            Coffee Break and Poster Session
+            <span class="speaker-name">Coffee Break & Poster Session</span><br>
+            <span class="talk-title">Networking & Posters</span>
           </td>
-          <td class="duration-col">60 min</td>
         </tr>
 
         <tr>
-          <td><time>11:00</time></td>
+          <td class="time">11:00</td>
           <td>
-            Invited Talk — Masahiro Ono (NASA / JPL — EELS block) <span class="notes">[CONFIRMED]</span>
+            <span class="speaker-name">Masahiro Ono (NASA/JPL, EELS)</span><br>
+            <span class="talk-title">[Confirmed]</span>
           </td>
-          <td class="duration-col">25 min + 5 min Q/A</td>
         </tr>
 
         <tr>
-          <td><time>11:30</time></td>
+          <td class="time">11:30</td>
           <td>
-            Invited Talk — (Chandrayaan 4? / Rasheed-2) or legged-related (SubT / CSIRO). Suggested: Hutter or recommended speaker.
+            <span class="speaker-name">Marco Hutter</span><br>
+            <span class="talk-title">Tentative</span>
           </td>
-          <td class="duration-col">25 min + 5 min Q/A</td>
         </tr>
 
         <tr>
-          <td><time>12:00</time></td>
+          <td class="time">12:00</td>
           <td>
-            Contributed Papers — Spotlight Talks
+            <span class="speaker-name">Contributed Papers</span><br>
+            <span class="talk-title">Selected Research Highlights</span>
           </td>
-          <td class="duration-col">30 min</td>
         </tr>
 
         <tr>
-          <td><time>12:30</time></td>
+          <td class="time">12:30</td>
           <td>
-            Lunch
+            <span class="speaker-name">Lunch</span><br>
+            <span class="talk-title">Buffet & Networking</span>
           </td>
-          <td class="duration-col">—</td>
         </tr>
 
         <tr class="session-group">
-          <td colspan="3">Afternoon Session: Addressing the Perceptual Challenge</td>
+          <td colspan="2">Afternoon Session: Addressing the Perceptual Challenge</td>
         </tr>
 
         <tr>
-          <td><time>13:30</time></td>
+          <td class="time">13:30</td>
           <td>
-            Invited Talk — Annika Thomas <span class="notes">[CONFIRMED]</span>
+            <span class="speaker-name">Annika Thomas</span><br>
+            <span class="talk-title">[Confirmed]</span>
           </td>
-          <td class="duration-col">25 min + 5 min Q/A</td>
         </tr>
 
         <tr>
-          <td><time>14:00</time></td>
+          <td class="time">14:00</td>
           <td>
-            Invited Talk — Davide Scaramuzza <span class="notes">[CONFIRMED]</span>
+            <span class="speaker-name">Davide Scaramuzza</span><br>
+            <span class="talk-title">[Confirmed]</span>
           </td>
-          <td class="duration-col">25 min + 5 min Q/A</td>
         </tr>
 
         <tr>
-          <td><time>14:30</time></td>
+          <td class="time">14:30</td>
           <td>
-            Invited Talk — Tim Barfoot <span class="notes">[CONFIRMED]</span>
+            <span class="speaker-name">Tim Barfoot</span><br>
+            <span class="talk-title">[Confirmed]</span>
           </td>
-          <td class="duration-col">25 min + 5 min Q/A</td>
         </tr>
 
         <tr>
-          <td><time>15:00</time></td>
+          <td class="time">15:00</td>
           <td>
-            Coffee Break and Poster Session <span class="notes">TODO: Carol</span>
+            <span class="speaker-name">Coffee Break & Poster Session</span><br>
+            <span class="talk-title">Networking & Posters</span>
           </td>
-          <td class="duration-col">60 min</td>
         </tr>
 
         <tr>
-          <td><time>16:00</time></td>
+          <td class="time">16:00</td>
           <td>
-            Panel Discussion
+            <span class="speaker-name">Panel Discussion</span><br>
+            <span class="talk-title">Future Challenges in Planetary Rover Perception</span>
           </td>
-          <td class="duration-col">60 min</td>
         </tr>
 
         <tr>
-          <td><time>17:00</time></td>
+          <td class="time">17:00</td>
           <td>
-            Closing Remarks
+            <span class="speaker-name">Closing Remarks</span><br>
+            <span class="talk-title">Summary and Next Steps</span>
           </td>
-          <td class="duration-col">10 min</td>
         </tr>
+
       </tbody>
     </table>
-
-    <p class="notes" style="margin-top:0.75rem;">
-      Note: times and speakers are subject to change. Durations include Q/A when specified.
-    </p>
   </main>
 
   <footer>
