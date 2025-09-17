@@ -1,42 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Perceptual challenges for planetary exploration: enabling the next generation of space robotic missions – ICRA 2026</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ICRA 2026</title>
+    <meta name="description" content="Multi-Robot Operations in Extreme Environments">
+      <meta name="keywords" content="workshop, science, academia, robotics, space, multi-robot, multi-agent, planetary, research, icra, ieee, ras">
+      <meta name="author" content="David Rodríguez">
+      <meta property="og:site_name" content="HERMES Workshop" >
+      <meta property="og:type" content="website" >
+      <meta property="og:title" content="1st Workshop on Perceptual Challenges for Planetary Exploration">
+      <meta property="og:description" content="Enabling the next generation of space robotic missions" >
+      <meta property="og:url" content="" >
+      <meta property="og:image" content="" >
+      <meta property="article:published_time" content="2026-09-25T11:21:00Z" >
+      <meta property="article:modified_time" content="2026-09-25T11:21:00Z" >
+      <!--
+      <meta name="twitter:card" content="summary_large_image" >
+      <meta name="twitter:title" content="3rd International HERMES Workshop" >
+      <meta name="twitter:description" content="Multi-Robot Operations in Extreme Environments" >
+      <meta name="twitter:url" content="https://hermes-workshop.com/2025.html" >
+      <meta name="twitter:image" content="https://hermes-workshop.com/img/2025/web_card.png" >
+      <meta name="twitter:site" content="@hermes_multibot" >
+      <meta name="twitter:creator" content="@David_RodZX" >
+      -->
+      <!-- Stylesheets -->
+      <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Perceptual challenges for planetary exploration: enabling the next generation of space robotic missions</h1>
-    <p>ICRA 2026 • June 1st, 2026 • Vienna, Austria </p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="program.html">Program</a>
-      <a href="speakers.html">Speakers</a>
-      <a href="submission.html">Submission</a>
-      <a href="organizers.html">Organizers</a>
-    </nav>
-  </header>
+    <div class="container">       
+        <section id="top-sec">
+          <div class="logo">
+            <!--
+            <a href="./index.html"><img src="./img/icra_logo.webp" width="150rem"></a>
+            -->
 
-  <main>
-    <section>
-      <h2>About</h2>
-      <p>
-        This workshop brings together researchers working on the broad topic of perception for planetary exploration rovers. The workshop will serve as a platform for communication and exchange of ideas, fostering collaboration on a challenging field that often plays a niche role in major robotics conferences.
-Future planetary exploration and exploitation envision robotic agents not merely as simple explorers, traversing terrains and sampling scientifically relevant information, but also as active partners in building the infrastructure needed to sustain human activities in space. These agents will need to sense and act, behaving as a natural extension of human astronauts, but also being able to build up infrastructure to enable long-term robotic operation, communication, and supporting human presence on planetary surfaces. 
-Achieving these ambitious goals demands advanced environmental understanding. In absence of powerful and online means of global positioning, accurate localization with respect to local scenes becomes critical for interaction tasks such as grasping and manipulation of scientific or infrastructural elements. Place recognition for loop closure detection in SLAM is key towards long-term stability of localization estimates, while semantic mapping can provide astronauts and mission control with rich contextual information, as well as decisional inputs to estimate terrain traversability.
-Beyond the limitations imposed by energy and computational budget, significant challenges emerge already from a methodological perspective. Before considering the case of an anthropized world, the severely unstructured nature of a planetary surface has severe implications in the context of its visual appearance: visual and structural aliasing, as well as lack of unambiguous features challenge robotic agents in the creation of consistent geometric representations. This is exacerbated by harsh lighting conditions, e.g. when operating on the lunar south pole, or in darkness. 
-While traditional systems operate relying on visual perception for navigation, multi-modal solutions can be explored relying on solid-state technologies for LiDAR, or RADAR sensors. Furthermore, powerful Deep Learning models can help significantly with respect to all the challenges highlighted already, being capable of re-detect scenes under aliasing, as well as extracting rich semantic contexts for human interaction. 
-Recent achievements in unmanned planetary exploration missions, e.g. NASA’s Curiosity and Ingenuity, as well as planned ones, such as CADRE (Cooperative Autonomous Distributed Robotic Exploration) from JPL or the JAXA/DLR Mars Moon Exploration (MMX) rover, demonstrate not only the increasing interest in robotic missions but also an increasing complexity of behaviors and requirements. From complex autonomous flight and landing site detection, to mobility in micro-gravity and non-wheeled locomotion, e.g., JPL’s EELS, a need arises for novel methodologies to address the perceptual challenge hindering localization, navigation and in-situ operations. 
-The workshop will serve as a platform for discussion and exchange between practitioners and leaders of robotic missions, and researchers working on methodological innovation, fostering the development of new solutions to fundamental questions
-      </p>
+          </div>
+          <nav class="navbar">
+            <ul>
+              <li><a href="#objectives">Objectives</a></li>
+              <li><a href="#program">Program</a></li>
+              <li><a href="" target="_blank">Call for Papers</a></li>
+            </ul>
+          </nav>
+         </section>
+         <section id="banner">
+            <a href="https://2026.ieee-icra.org/" target="_blank">
+                <img src="./img/icra_logo.webp" alt="ICRA2026">
+            </a>
+         </section> 
+    
+    <section id="basic-info">
+        <h1>1st Workshop on Perceptual Challenges for Planetary Exploration</h1>
+        <h2>IEEE International Conference on Robotics and Automation</h2>
+        <h3>2026 June 1st or 5th (TBD), Monday or Friday</h3>
+        <mark>Workshop Proposal (under review)</mark> 
+        <!--<mark>Contribute to our workshop: details <a href="https://drive.google.com/file/d/1uhGFp9BLktCwyecwlxb9iyTacbJg0baO/view?usp=drive_link" target="_blank">here</a>.</mark>-->
+
+        <!--<div class="media">
+            <p>Many thanks to all the invited speakers, paper presenters, members of the scientific committee, and attendees of our 2nd workshop!</p>
+            <img src="./img/2024/icra2024_event0.jpg" width="600" alt="HERMES 2025 Organizing Committee">
+            <img src="./img/2024/icra2024_event1.jpg" width="600" alt="HERMES 2024 Prof. Kubota's talk">
+            <img src="./img/2024/icra2024_event2.jpg" width="600" alt="HERMES 2024 Vandi Verma">
+            <img src="./img/2024/icra2024_event3.jpg" width="600" alt="HERMES 2024 Posters displayed">
+            <img src="./img/2024/icra2024_event5.jpg" width="600" alt="HERMES 2024 full house">
+            <img src="./img/2024/icra2024_event6.jpg" width="600" alt="HERMES 2024 Teresa Vidal's talk">
+            <img src="./img/2024/icra2024_event7.jpg" width="600" alt="HERMES 2024 Attendees">
+        </div>-->
+
+        <section id="scope">
+            <div class="scope-text">
+                <h2>Enabling the next generation of space robotic missions</h2>
+                <p>Future planetary exploration envisions robotic agents not only as explorers collecting data, but also as partners in building infrastructure to sustain human activities in space. These agents must sense, act, and interact as extensions of astronauts, while autonomously establishing systems that enable long-term operation, communication, and habitation.
+                    Achieving this requires advanced environmental understanding. In the absence of global positioning, accurate localization relative to local scenes is critical for tasks such as grasping and manipulation. Place recognition enables long-term SLAM stability, while semantic mapping offers contextual information for mission control and terrain traversability assessment.
+                    Planetary surfaces present severe challenges: unstructured environments, visual and structural aliasing, lack of distinctive features, and harsh illumination (e.g., lunar south pole). Energy and computational constraints amplify these difficulties. Multi-modal perception — combining visual, LiDAR, and radar sensing — together with deep learning approaches can improve robustness, supporting scene re-detection and semantic interpretation for human interaction.
+                    Recent and planned missions (e.g., NASA’s Curiosity, Ingenuity, and CADRE; JAXA/DLR’s MMX; JPL’s EELS) highlight both the rapid growth of planetary robotics and the complexity of emerging requirements, from autonomous flight to non-wheeled locomotion. These illustrate the pressing need for novel methodologies addressing the perceptual challenges of localization, navigation, and in-situ operations.
+                    This workshop will provide a platform for exchange between mission practitioners and methodological innovators, fostering new solutions to these fundamental problems.
+                </p>
+            </div>
+        </section>
+
+        <div class="details-grid">
+            <div class="details-grid-item">
+                <div class="dgi-icon"><img src="./img/where.png" alt="Location" width="50px"></div>
+                <div class="dgi-title">
+                    <p>Where</p>
+                </div>
+                <div class="dgi-info">
+                    <p style="font-weight: bold;">Location TBD</p>
+                    <p>Location TBD</p>
+                    <p>Vienna, Austria</p>
+                </div>
+                <a href="https://maps.app.goo.gl/4qvtxWXcCArdudS38" target="_blank">
+                    <button class="dgi-button">Map</button>
+                </a>
+            </div>
+            <div class="details-grid-item">
+                <div class="dgi-icon"><img src="./img/register.png" alt="Register" width="50px"></div>
+                <div class="dgi-title">
+                    <p>Registration</p>
+                </div>
+                <div class="dgi-info">
+                    <p>For both <span style="font-weight: bold;">onsite and online attendees</span> , please use the official ICRA website for registration.</p>
+                </div>
+                <a href="https://2026.ieee-icra.org/" target="_blank">
+                    <button class="dgi-button">Register</button>
+                </a>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    © 2026 Workshop on Perceptual Challenges for Planetary Exploration
-  </footer>
+    <section id="organizers">
+        <h2>Organizers</h2>
+        <div class="organizers-grid">
+            <div class="organizer-item">
+            <img src="./img/organizers/riccardo.jpg" alt="Riccardo Giubilato" width="120">
+            <div class="organizer-name">Riccardo Giubilato</div>
+            <div class="organizer-role">Group Leader</div>
+            <div class="organizer-affiliation">German Aerospace Center (DLR)</div>
+            </div>
+            <div class="organizer-item">
+            <img src="./img/organizers/david.jpg" alt="David Rodriguez Martinez" width="120">
+            <div class="organizer-name">David Rodriguez Martinez</div>
+            <div class="organizer-role">Co-Chair</div>
+            <div class="organizer-affiliation">Affiliation</div>
+            </div>
+            <div class="organizer-item">
+            <img src="./img/organizers/olivier.png" alt="Olivier Lamarre" width="120">
+            <div class="organizer-name">Olivier Lamarre</div>
+            <div class="organizer-role">Co-Chair</div>
+            <div class="organizer-affiliation">Affiliation</div>
+            </div>
+            <div class="organizer-item">
+            <img src="./img/organizers/kentaro.jpg" alt="Kentaro Uno" width="120">
+            <div class="organizer-name">Kentaro Uno</div>
+            <div class="organizer-role">Co-Chair</div>
+            <div class="organizer-affiliation">Affiliation</div>
+            </div>
+            <div class="organizer-item">
+            <img src="./img/organizers/raul.jpg" alt="Raul Castilla Arquillo" width="120">
+            <div class="organizer-name">Raul Castilla Arquillo</div>
+            <div class="organizer-role">Co-Chair</div>
+            <div class="organizer-affiliation">Affiliation</div>
+            </div>
+            <div class="organizer-item">
+            <img src="./img/organizers/carol.jpg" alt="Carol Martinez Luna" width="120">
+            <div class="organizer-name">Carol Martinez Luna</div>
+            <div class="organizer-role">Co-Chair</div>
+            <div class="organizer-affiliation">Affiliation</div>
+            </div>
+            <div class="organizer-item">
+            <img src="./img/organizers/renaud.jpg" alt="Renaud Detry" width="120">
+            <div class="organizer-name">Prof. Renaud Detry</div>
+            <div class="organizer-role">Co-Chair</div>
+            <div class="organizer-affiliation">Affiliation</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="media"></section>
+
+    <section id="invited-speakers">
+        <h2>Invited Speakers</h2>
+        <div class="speakers-grid">
+            <div class="speakers-grid-item">
+                <div class="sgi-pic"><img src="./img/burkhard.jpg" alt="Lukas Burkhard"></div>
+                <div class="sgi-name">Lukas Burkhard</div>
+                <div class="sgi-role">Doctoral Researcher</div>
+                <div class="sgi-affiliation">German Aerospace Center (DLR)</div>
+            </div>
+            <div class="speakers-grid-item">
+                <div class="sgi-pic"><img src="./img/ono.jpg" alt="Masahiro Ono"></div>
+                <div class="sgi-name">Masahiro Ono</div>
+                <div class="sgi-role">Group Supervisor of the Robotic Surface Mobility Group</div>
+                <div class="sgi-affiliation">NASA Jet Propulsion Laboratory</div>
+            </div>
+            <div class="speakers-grid-item">
+                <div class="sgi-pic"><img src="./img/croix.jpg" alt="Jean Pierre De la Croix"></div>
+                <div class="sgi-name">Jean Pierre De la Croix</div>
+                <div class="sgi-role">Robotics Systems Engineer in the Maritime and Multi-Agent Autonomy</div>
+                <div class="sgi-affiliation">NASA Jet Propulsion Laboratory</div>
+            </div>
+            <div class="speakers-grid-item">
+                <div class="sgi-pic"><img src="./img/hutter.jpeg" alt="Marco Hutter"></div>
+                <div class="sgi-name">Marco Hutter</div>
+                <div class="sgi-role">Full Professor at Dept. Mechanical and Process Engineering</div>
+                <div class="sgi-affiliation">ETH Zurich</div>
+            </div>
+            <div class="speakers-grid-item">
+                <div class="sgi-pic"><img src="./img/thomas.jpg" alt="Annika Thomas"></div>
+                <div class="sgi-name">Annika Thomas</div>
+                <div class="sgi-role">Doctoral Researcher</div>
+                <div class="sgi-affiliation">Massachusset Institute of Technology (MIT)</div>
+            </div>
+            <div class="speakers-grid-item">
+                <div class="sgi-pic"><img src="./img/scaramuzza.jpg" alt="Davide Scaramuzza"></div>
+                <div class="sgi-name">Davide Scaramuzza</div>
+                <div class="sgi-role">Professor of Robotics and Perception</div>
+                <div class="sgi-affiliation">University of Zurich</div>
+            </div>
+            <div class="speakers-grid-item">
+                <div class="sgi-pic"><img src="./img/barfoot.jpg" alt="Timothy Barfoot"></div>
+                <div class="sgi-name">Tim Barfoot</div>
+                <div class="sgi-role">Professor at Institute for Aerospace Studies</div>
+                <div class="sgi-affiliation">University of Toronto</div>
+            </div>
+        </div>
+        <!-- <h3 style="margin: 20px 0;">And more coming soon...</h3> -->
+    </section>
+
+    <section id="program">
+        <h2>Program</h2>
+        <h5 style="color: red;">*All times are in UTC+2</h5>
+
+        <div class="program-grid">
+    <div class="program-grid-item">
+        <div class="pgi-title">08:30 - Greetings and Introduction of the Workshop</div>
+        <div class="pgi-speaker">By workshop organizers (15 mins)</div>
+
+        <div class="pgi-session">Morning Session: Insights and Experience from Real Planetary Rover Missions</div>
+
+        <div class="pgi-title">09:00 - Invited Talk (MMX)</div>
+        <div class="pgi-info">
+            <div class="pgi-speaker">By Lukas Burkhard [CONFIRMED] (25 min + 5 min Q/A)</div>
+            <div class="pgi-media"><a href="#" target="_blank">Video</a> | <a href="#" target="_blank">Slides</a></div>
+        </div>
+
+        <div class="pgi-title">09:30 - Invited Talk (CADRE/Endurance)</div>
+        <div class="pgi-info">
+            <div class="pgi-speaker">By Dr. Jean-Pierre de la Croix (25 min + 5 min Q/A)</div>
+            <div class="pgi-media"><a href="#" target="_blank">Video</a> | <a href="#" target="_blank">Slides</a></div>
+        </div>
+
+        <div class="pgi-break">Coffee Break and Poster Session (10:00 - 11:00)</div>
+
+        <div class="pgi-title">11:00 - Invited Talk (NASA/JPL block: EELS)</div>
+        <div class="pgi-info">
+            <div class="pgi-speaker">By Dr. Masahiro Ono [CONFIRMED] (25 min + 5 min Q/A)</div>
+            <div class="pgi-media"><a href="#" target="_blank">Video</a> | <a href="#" target="_blank">Slides</a></div>
+        </div>
+
+        <div class="pgi-title">11:30 - Invited Talk (Legged Mobility and Navigation)</div>
+        <div class="pgi-info">
+            <div class="pgi-speaker">By Prof. Marco Hutter (not confirmed) (25 min + 5 min Q/A)</div>
+            <div class="pgi-media"><a href="#" target="_blank">Video</a> | <a href="#" target="_blank">Slides</a></div>
+        </div>
+
+        <div class="pgi-session-cfp">Contributed Papers Spotlight Talks (12:00 - 12:30)</div>
+
+        <div class="pgi-break">Lunch (12:30 - 13:30)</div>
+    </div>
+
+    <div class="program-grid-item">
+        <div class="pgi-session">Afternoon Session: Addressing the Perceptual Challenge </div>
+
+        <div class="pgi-title">13:30 - Invited Talk</div>
+        <div class="pgi-info">
+            <div class="pgi-speaker">By Annika Thomas [CONFIRMED] (25 min + 5 min Q/A) </div>
+            <div class="pgi-media"><a href="#" target="_blank">Video</a> | <a href="#" target="_blank">Slides</a></div>
+        </div>
+
+        <div class="pgi-title">14:00 - Invited Talk</div>
+        <div class="pgi-info">
+            <div class="pgi-speaker">By Prof. Davide Scaramuzza [CONFIRMED] (25 min + 5 min Q/A) </div>
+            <div class="pgi-media"><a href="#" target="_blank">Video</a> | <a href="#" target="_blank">Slides</a></div>
+        </div>
+
+        <div class="pgi-title">14:30 - Invited Talk</div>
+        <div class="pgi-info">
+            <div class="pgi-speaker">By Prof. Tim Barfoot [CONFIRMED] (25 min + 5 min Q/A) </div>
+            <div class="pgi-media"><a href="#" target="_blank">Video</a> | <a href="#" target="_blank">Slides</a></div>
+        </div>
+
+        <div class="pgi-break">Coffee Break and Poster Session (15:00 - 16:00) </div>
+
+        <div class="pgi-title">16:00 - Panel Discussion</div>
+        <div class="pgi-speaker">Panel with invited speakers and organizers (60 min)</div>
+
+        <div class="pgi-title">17:00 - Closing Remarks</div>
+        <div class="pgi-speaker">By workshop organizers (10 min)</div>
+    </div>
+</div>
+
+
+    </section>
+
+    <!--<section id="topics">
+        <h3>Selected poster presentations</h3>
+        <ol>
+            <li><b>Aiman Munir</b>, Ehsan Latif, and Ramviyas Parasuraman, <i>Anchor-oriented Multi-Robot Coverage without Global Localization</i>, University of Georgia</li>
+            <li><b>Zhuoli Tian</b>, Yuyang Zhang, Jinsheng Wei, and Meng Guo, <i>Human-oriented Interactive Exploration and Supervision with Limited Communication</i>, Peking University</li>
+            <li><b>José Pedro</b>, Roberto C. Sundin, David Umsonst, and Patric Jensfelt, <i>COPE: Robustifying Collaborative SLAM through Multi-Stage Pose-Graph Optimization</i>, Ericsson Research and KTH Royal Institute of Technology</li>
+            <li><b>Nico Messikommer</b>, Carter Fang, Mathias Gehrig, and Davide Scaramuzza, <i>Data-driven Feature Tracking for Event Cameras</i>, University of Zurich</li>
+            <li>Jan Christoph Krause, <b>Mark Niemeyer</b>, Janosch Bajorath, Naeem Iqbal, and Joachim Hertzberg, <i>Towards Auto-Generated Ground Truth for Evaluation of Perception Systems in Agriculture</i>, German Research Center for Artificial Intelligence (DFKI)</li>
+            <li><b>Bichi Zhang</b>, Holger Caesar, and Raj Thilak Rajan, <i>Multi-FEAT: Multi-Feature Edge AlignmenT for Targetless Camera-LiDAR Calibration</i>, Delft University of Technology</li>
+            <li>Nuwan Munasinghe, <b>Cedric Le Gentil</b>, Jack Naylor, Mikhail Asavkin, Donald G. Danserea, and Teresa Vidal-Calleja, <i>Towards Event-Based Satellite Docking: A Photometrically Accurate Low-Earth Orbit Hardware Simulation</i>, University of Technology Sydney, University of Sydney, and ANT61</li>
+            <li>Mattia Mantovani, <b>Federico Pratissoli</b>, and Lorenzo Sabattini, <i>Distributed Coverage Control for Spatial Processes Estimation with Noisy Observations</i>, University of Modena and Reggio Emilia</li>
+        </ol>
+    </section> -->
+
+    <section id="objectives">
+        <h2>Objectives</h2>
+        <div class="objectives-header">
+            <p> Our goal is to explore and identify new solutions towards the perceptual challenge that planetary rover systems face
+                while exploring severly unstructured environments, under harsh illumationation conditions and extreme perceptual aliasing. 
+                In these scenarios, critical challenges arise with respect to fundamental tasks such as:
+            </p>
+            
+        </div>
+        <ul>
+            <li>
+                <img src="./img/2025/identify.png" alt="Search Icon" style="width: 55px; padding-bottom: 20px;">
+                <p>to <mark style="background-color: rgba(0,0,0,0); color: var(--bright-text);">State Estimation</mark> 
+                    in absence of stable and unambiguous perceptual cues, robust state estimation is challenged. Novel methodologies need 
+                to be investigated, including multi-modal and non-conventional perception strategies </p></li>
+            <li> 
+                <img src="./img/2025/understand.png" alt=" Icon" style="width: 55px; padding-bottom: 20px;">
+                <p>to <mark style="background-color: rgba(0,0,0,0); color: var(--bright-text);">Mapping and Exploration</mark> 
+                    Under visual and structural ambiguity, globally consistent mapping and science-driven exploration are challenged, 
+                    requiring innovative approaches to ensure reliable and informative scene understanding      
+                </p></li>
+            <li>
+                <img src="./img/2025/explore.png" alt="Search Icon" style="width: 55px; padding-bottom: 20px;">
+                <p>to <mark style="background-color: rgba(0,0,0,0); color: var(--bright-text);">Manipulation</mark>
+                    Physical interaction, e.g. towards identification, in-situ analysis and grasping of scientifically relevant object, or to
+                    construct and deploy infrastructure, is a key skill to maximize the scientific return of unmanned exploration missions</p></li>
+        </ul>
+    </section>
+
+    <section id="topics">
+        <h2>Topical Questions</h2>
+        <ul>
+            <li>How can we achieve long-term, drift-free localization in absence of a complex GNSS network in spite of the environmental challenges offered by planetary environments? </li>
+            <li>Which non-traditional sensing solutions (e.g., ground-penetrating radar, event-based cameras, in-situ force/torque perception) are most promising for planetary surfaces?</li>
+            <li>What role semantic classification plays in the perception system of a planetary rover? And how should semantics be defined in planetary contexts?</li>
+            <li>How can a robot robustly estimate traversability of partially unknown terrains under perceptual challenges, and how can uncertainty be taken into account?</li>
+            <li>What perceptual representations are needed for precise in-situ manipulation tasks, such as sample collection, tool use, or infrastructure assembly?
+</li>
+            <li>How can teams of heterogeneous (e.g., wheeled and non-wheeled) robotic agents operate together on shared environment representations contributing with complementary capabilities?</li>
+            <li>What benchmarks, datasets, real or simulated, are needed to meaningfully evaluate localization and mapping systems before deployment? How would datasets and benchmarks address the topic of Verification & Validation?</li>
+        </ul>
+
+        <h3>Call for Papers</h3>
+        <div class="topics-header">
+            <p>Info coming soon...</p>
+            <!--<p><b>We are no longer accepting papers for our workshop</b>. All the information about the call for papers can be found <a href="#" target="_blank">here</a>.</p>-->
+        </div>
+        <p><b>Important dates</b></p>
+        <ul>
+            <li>Paper submission deadline: TBD</li>
+            <li>Paper notification of acceptance: TBD</li>
+            <li>Camera-ready version deadline: TBD</li>
+            <li>Workshop day: TBD</li>
+        </ul>
+
+    </section>
+    
+    <section id="sponsors">
+        <div class="sponsor-grid">
+            <div class="sponsor-header">
+                <h2>Sponsors</h2>
+                <a href="mailto:hermes@epfl.ch">
+                    <button>Become a sponsor</button>
+                </a>
+            </div>
+            <h4>Coming soon...</h4>
+            <!--
+            <p>This workshop was supported by the Luxembourg National Research Fund (FNR)—FiReSpARX Project (ref. 14783405), Airbus Defense & Space (Silver Sponsor), and Neurospace (Bronze Sponsor).</p>
+            <div class="sponsor-logos">
+                <img src="./img/2023/lux_nrf.png" alt="Luxembourg National Research Fund">
+                <img src="./img/2023/airbus.png" alt="Airbus D&S">
+                <img src="./img/2023/NeuroSpace_Revision-08-3.png" alt="NeuroSpace">
+            </div>
+            <p>We are proud to be endorsed by the following IEEE/RAS Technical Committees:</p>
+            <div class="sponsor-logos">
+                <img src="./img/2023/tc-marine.png" alt="Technical Committee on Marine Robotics">
+                <img src="./img/2023/tc-multirobot.png" alt="Technical Committee on Multi-Robot Systems">
+            </div> -->
+        </div>
+    </section>
+    <!--
+    <section id="end">
+        <div class="social-grid">
+          <div class="social-icon"><a href="https://twitter.com/hermes_multibot" target="_blank"><img src="./img/twitter_white.png" alt="Twitter by Rakib Hassan Rahim"></a></div>
+          <div class="social-icon"><a href="https://www.linkedin.com/groups/12757017/" target="_blank"><img src="./img/linkedin_white.png" alt="Linkeding by Rakib Hassan Rahim"></a></div>
+          <div class="social-icon"><a href="https://www.youtube.com/@hermes_multibot" target="_blank"><img src="./img/youtube_white.png" alt="Youtube by Rakib Hassan Rahim"></a></div>
+          <div class="social-icon"><a href="mailto:hermes@epfl.ch" target="_blank"><img src="./img/email_white.png" alt="Email by Rakib Hassan Rahim"></a></div>
+        </div>
+        <h5>HERMES &#169 2024</h5>
+    </section>
+    -->
 </body>
 </html>
-
