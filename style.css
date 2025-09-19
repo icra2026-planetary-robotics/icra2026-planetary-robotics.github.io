@@ -508,6 +508,10 @@ button:hover {
   color: var(--hermes-25-futuredusk); /* or any color you prefer */
 }
 
+img.bw {
+  filter: grayscale(100%) contrast(120%) brightness(90%);
+}
+
 @media screen and (max-width: 850px) {
     #banner img{
         width: 100%;
