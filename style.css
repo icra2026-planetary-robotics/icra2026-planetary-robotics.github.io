@@ -1,15 +1,37 @@
 @import "./style.css";
 
 body {
-    font-family: 'Segoe UI' /*, Arial, Helvetica, sans-serif; */
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 18px;
+    line-height: 1.5em;
+    background-color: #ebebeb;
     /* ...other styles... */
+        margin: 0;
+    padding: 0;  /* important */
+}
+
+/* Constrained page content */
+.container {
+    max-width: 1200px; /* whatever width you want */
+    margin: 0 auto; /* centers the content */
 }
 
 :root {
   --hermes-25-futuredusk: rgb(76, 85, 120);
+  --hermes-25-futuredusk-dark: rgb(37, 41, 59);
   --hermes-25-celadon: rgb(190, 229, 191);
   --bright-text: rgb(255, 255, 255, 0.75);
   --hermes-25-thulianpink: rgba(31, 100, 76, 0.975);
+}
+
+p a {
+  color: var(--hermes-25-thulianpink);
+  text-decoration: underline;
+}
+
+p a:hover {
+  color: var(--hermes-25-futuredusk);
+  text-decoration: none;
 }
 
 button:active {
@@ -78,23 +100,133 @@ button:hover {
   padding: 10px;
 }
 
+/* Persistent top bar */
+#top-sec {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--hermes-25-futuredusk-dark); /* or your theme color */
+    padding: 10px 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+/* Full-width sticky bar with background */
+.top-bar {
+    width: 100%;
+    background-color: #0a1f44; /* keep the color */
+    color: white;
+    position: sticky; /* sticky to top */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Inner container aligned to page content */
+.bar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem; /* gives height for background to show */
+}
+
+/* Logo scaling */
+.bar-container .logo {
+    height: 40px;
+    width: auto;
+}
+
+/* Navigation styling */
+.bar-container nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.bar-container nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.bar-container nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Navbar layout */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: auto;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.top-logo {
+    height: 60px;
+    width: auto;
+}
+
+
+
+#scope-title {
+    width: 100%;
+    background-color: var(--hermes-25-futuredusk);
+    background-image: url("./img/phobos_blur.png");
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    color: rgb(228, 228, 228);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;  /* vertical padding */
+    margin: 0;         /* remove top margin */
+} 
+#scope-title .inner-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+}
 
 #scope {
-  background-color: var(--hermes-25-futuredusk); /* solid color */
-  background-image:
-    url("./img/phobos_blur.png");
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-position: center;
-  color: var(--bright-text);
-  height: auto;
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  padding: 0 20px;
+    background-color: #f8f9fc;      /* light, neutral background */
+    border: 1px solid var(--hermes-25-futuredusk-dark);     /* thin dark-blue border */
+    border-radius: 6px;            /* rounded corners */
+    color: var(--dark-text, #0a1f44); /* text color dark enough for contrast */
+    
+    max-width: 1200px;              /* contained like page content */
+    width: 100%;
+    margin: 40px auto;              /* center and add vertical spacing */
+    
+
+    display: flex;
+    flex-direction: column;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1rem;                       /* spacing between children */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* subtle shadow for depth */
 }
 
 #scope .scope-text {
@@ -103,7 +235,7 @@ button:hover {
 }
 
 #scope .scope-text h2{
-  color: var(--bright-text);
+  color: var(--hermes-25-futuredusk-dark);
   margin: 10px 0;
 }
 
@@ -119,11 +251,11 @@ button:hover {
     width: 66%;
     justify-content: center;
     align-items: flex-start;
-    gap: 35px;
+    gap: 10px;
 }
 
 .details-grid-item {
-    margin: 20px 0;
+    margin: 0px 0;
     padding: 10px;
     width: 200px;
     display: flex;
@@ -134,7 +266,7 @@ button:hover {
   }
 
   .dgi-icon {
-    height: 55px;
+    height: 30px;
     text-align: center;
   }
 
@@ -151,7 +283,7 @@ button:hover {
     justify-content: center;
     font-size: 16px;
     line-height: 20px;
-    height: 120px;
+    height: 70px;
   }
 
   .dgi-button {
@@ -397,6 +529,15 @@ button:hover {
     background-position: 50%;
   }
 
+
+  #call-for-papers {
+ display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
   #topics {
     display: flex;
     flex-flow: column wrap;
@@ -406,7 +547,7 @@ button:hover {
   }
 
   #objectives h2{
-    padding: 35px 0 15px 0;
+    padding: 10px 0 10px 0;
     color: var(--bright-text);
   }
 
@@ -417,13 +558,11 @@ button:hover {
 
   .objectives-header{
     width: 66%;
-    padding: 15px 0 15px 0;
     color: var(--bright-text);
   }
 
   .topics-header{
     width: 66%;
-    padding: 15px 0 30px 0;
     color: black;
   }
 
@@ -435,7 +574,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     gap: 0;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     color: var(--bright-text);
     margin-bottom: 2%;
   }
@@ -447,7 +586,7 @@ button:hover {
     align-items: center;
     padding: 10px;
     width: 30%;
-    height: 350px;
+    height: auto;
   }
 
   #topics ul, ol{
@@ -458,6 +597,8 @@ button:hover {
   #topics ul li, ol li {
     padding: 5px;
   }
+
+  #call-for-papers objectives {}
 
 
 #organizers {
@@ -512,12 +653,12 @@ img.bw {
   filter: grayscale(100%) contrast(120%) brightness(90%);
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1000px) {
     #banner img{
         width: 100%;
     }
   #basic-info h1{
-      font-size: 22px;   
+      font-size: 18px;   
   }
   #basic-info h2{
       font-size: 16px;
@@ -613,17 +754,17 @@ img.bw {
     #objectives ul li {
       padding: 5px;
       width: 30%;
-      height: 300px;
+      height: auto;
     }
     #topics ul{
       width: 90%;
-      padding: 10px 0 35px 0;
+      padding: 35px 0 35px 0;
       font-size: 14px;
     }
 
     #topics ol{
       width: 90%;
-      padding: 10px 0 35px 0;
+      padding: 35px 0 35px 0;
       font-size: 14px;
     }
   

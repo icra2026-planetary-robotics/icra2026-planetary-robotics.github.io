@@ -28,53 +28,44 @@
       <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">       
-        <section id="top-sec">
-          <div class="logo">
-            <!--
-            <a href="./index.html"><img src="./img/icra_logo.webp" width="150rem"></a>
-            -->
-
-          </div>
-          <nav class="navbar">
-            <ul>
-              <li><a href="#objectives">Objectives</a></li>
-              <li><a href="#program">Program</a></li>
-              <li><a href="" target="_blank">Call for Papers</a></li>
-            </ul>
-          </nav>
-         </section>
-         <section id="banner">
+    <header class="top-bar">
+        <div class="bar-container">
             <a href="https://2026.ieee-icra.org/" target="_blank">
-                <img src="./img/icra_logo.webp" alt="ICRA2026">
+                <img src="./img/icra_logo.webp" alt="ICRA2026" class="logo">
             </a>
-         </section> 
-    
+            <nav>
+                <ul>
+                    <li><a href="#objectives">Objectives</a></li>
+                    <li><a href="#program">Program</a></li>
+                    <li><a href="#call-for-papers">Call for Papers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="scope-title">
+        <div class="inner-container">
+            <h1>1st Workshop on Perceptual Challenges for Planetary Exploration</h1>
+            <h2>IEEE International Conference on Robotics and Automation</h2>
+            <h3>Friday 5th June 2026</h3>
+        </div>
+    </section>
+
+    <div class="container">       
+        
     <section id="basic-info">
-        <h1>1st Workshop on Perceptual Challenges for Planetary Exploration</h1>
-        <h2>IEEE International Conference on Robotics and Automation</h2>
-        <h3>2026 June 1st or 5th (TBD), Monday or Friday</h3>
-        <!--<mark>Contribute to our workshop: details <a href="https://drive.google.com/file/d/1uhGFp9BLktCwyecwlxb9iyTacbJg0baO/view?usp=drive_link" target="_blank">here</a>.</mark>-->
-
-        <!--<div class="media">
-            <p>Many thanks to all the invited speakers, paper presenters, members of the scientific committee, and attendees of our 2nd workshop!</p>
-            <img src="./img/2024/icra2024_event0.jpg" width="600" alt="HERMES 2025 Organizing Committee">
-            <img src="./img/2024/icra2024_event1.jpg" width="600" alt="HERMES 2024 Prof. Kubota's talk">
-            <img src="./img/2024/icra2024_event2.jpg" width="600" alt="HERMES 2024 Vandi Verma">
-            <img src="./img/2024/icra2024_event3.jpg" width="600" alt="HERMES 2024 Posters displayed">
-            <img src="./img/2024/icra2024_event5.jpg" width="600" alt="HERMES 2024 full house">
-            <img src="./img/2024/icra2024_event6.jpg" width="600" alt="HERMES 2024 Teresa Vidal's talk">
-            <img src="./img/2024/icra2024_event7.jpg" width="600" alt="HERMES 2024 Attendees">
-        </div>-->
-
         <section id="scope">
             <div class="scope-text">
                 <h2>Enabling the next generation of space robotic missions</h2>
                 <p>Future planetary exploration envisions robotic agents not only as explorers collecting data, but also as partners in building infrastructure to sustain human activities in space. These agents must sense, act, and interact as extensions of astronauts, while autonomously establishing systems that enable long-term operation, communication, and habitation.
-                    Achieving this requires advanced environmental understanding. In the absence of global positioning, accurate localization relative to local scenes is critical for tasks such as grasping and manipulation. Place recognition enables long-term SLAM stability, while semantic mapping offers contextual information for mission control and terrain traversability assessment.
+                    Achieving this requires advanced environmental understanding. In the absence of global positioning, accurate localization relative to local scenes is critical for tasks such as grasping and manipulation. 
+                  </p>  
+                <p>Place recognition enables long-term SLAM stability, while semantic mapping offers contextual information for mission control and terrain traversability assessment.
                     Planetary surfaces present severe challenges: unstructured environments, visual and structural aliasing, lack of distinctive features, and harsh illumination (e.g., lunar south pole). Energy and computational constraints amplify these difficulties. Multi-modal perception — combining visual, LiDAR, and radar sensing — together with deep learning approaches can improve robustness, supporting scene re-detection and semantic interpretation for human interaction.
-                    Recent and planned missions (e.g., NASA’s Curiosity, Ingenuity, and CADRE; JAXA/DLR’s MMX; JPL’s EELS) highlight both the rapid growth of planetary robotics and the complexity of emerging requirements, from autonomous flight to non-wheeled locomotion. These illustrate the pressing need for novel methodologies addressing the perceptual challenges of localization, navigation, and in-situ operations.
-                    This workshop will provide a platform for exchange between mission practitioners and methodological innovators, fostering new solutions to these fundamental problems.
+                  </p>  
+                <p>Recent and planned missions (e.g., NASA’s Curiosity, Ingenuity, and CADRE; JAXA/DLR’s MMX; JPL’s EELS) highlight both the rapid growth of planetary robotics and the complexity of emerging requirements, from autonomous flight to non-wheeled locomotion. These illustrate the pressing need for novel methodologies addressing the perceptual challenges of localization, navigation, and in-situ operations.
+                  </p>  
+                <p>This workshop will provide a platform for exchange between mission practitioners and methodological innovators, fostering new solutions to these fundamental problems.
                 </p>
             </div>
         </section>
@@ -86,7 +77,6 @@
                     <p>Where</p>
                 </div>
                 <div class="dgi-info">
-                    <p style="font-weight: bold;">Location TBD</p>
                     <p>Location TBD</p>
                     <p>Vienna, Austria</p>
                 </div>
@@ -213,7 +203,7 @@
     </section>
 
     <section id="program">
-        <h2>Program</h2>
+        <h1>Program</h1>
         <h5 style="color: red;">*All times are in UTC+2</h5>
 
         <div class="program-grid">
@@ -337,7 +327,7 @@
     </section>
 
     <section id="topics">
-        <h2>Topical Questions</h2>
+        <h1>Topical Questions</h1>
         <ul>
             <li>How can we achieve long-term, drift-free localization in absence of a complex GNSS network in spite of the environmental challenges offered by planetary environments? </li>
             <li>Which non-traditional sensing solutions (e.g., ground-penetrating radar, event-based cameras, in-situ force/torque perception) are most promising for planetary surfaces?</li>
@@ -348,10 +338,32 @@
             <li>How can teams of heterogeneous (e.g., wheeled and non-wheeled) robotic agents operate together on shared environment representations contributing with complementary capabilities?</li>
             <li>What benchmarks, datasets, real or simulated, are needed to meaningfully evaluate localization and mapping systems before deployment? How would datasets and benchmarks address the topic of Verification & Validation?</li>
         </ul>
-
-        <h3>Call for Papers</h3>
+    </section>
+    <section id="call-for-papers">
+        <h1>Call for Papers</h1>
         <div class="topics-header">
-            <p>Info coming soon...</p>
+            <p>We welcome paper contributions related, but not limited, to the following topics of interest: </p>
+            <li>Challenges in and novel approaches for visual state estimation in percpetually degraded, e.g. planetary, environments</li>
+            <li>Multi-modal fusion of perceptual inputs for robust state estimation and navigation in planetary scenes</li>
+            <li>Unconventional perception strategies for future planetary missions</li>
+            <li>The role of semantic perception and mapping for terrain navigation and place recognition</li>
+            <li>Multi-robot cooperation for efficient exploration of large-scale planetary environments</li>
+            <li>Results of test campaigns in analogous planetary environments or laboratory settings</li>
+            <li>Challenges for testing and verification and validation for space-graded perception, localization and navigation software</li>
+            <li>The role of perceptual degradation in the interaction with planetary environments, e.g., manipulation and infrastructure building</li>
+            <p>
+               All submitted papers will be reviewed on the basis of technical quality, relevance, significance, and clarity. Preference will be given to work conducted by
+               <b>early stage researchers and PhD students</b>.
+               The page limit of submitted papers is <b>6 pages</b> including references, following the IEEE standard (
+                <a href="http://ras.papercept.net/conferences/support/tex.php" target="_blank" rel="noopener">Latex</a>, 
+                <a href="http://ras.papercept.net/conferences/support/word.php" target="_blank" rel="noopener">MS Word</a>,
+                <a href="http://ras.papercept.net/conferences/support/support.php" target="_blank" rel="noopener">Guidelines</a>
+               ). We welcome presentation of original and yet unpublished work, as well as extensions over 
+               already published contributions, or to technical contributions of ICRA 2026.
+               From the accepted contributions, 6 papers will be selected to provide a quick <b>spotlight presentation</b> of 5 minutes at the end of the morning session.
+               Authors of accepted contributions will be able to present their work during the poster sessions in the morning and in the afternoon sessions. 
+               All accepted submissions will be let available to the public through the workshop website. 
+            </p>
             <!--<p><b>We are no longer accepting papers for our workshop</b>. All the information about the call for papers can be found <a href="#" target="_blank">here</a>.</p>-->
         </div>
         <p><b>Important dates</b></p>
@@ -359,9 +371,8 @@
             <li>Paper submission deadline: TBD</li>
             <li>Paper notification of acceptance: TBD</li>
             <li>Camera-ready version deadline: TBD</li>
-            <li>Workshop day: TBD</li>
+            <li>Workshop day: Friday May 5th 2026</li>
         </ul>
-
     </section>
     
     <section id="sponsors">
