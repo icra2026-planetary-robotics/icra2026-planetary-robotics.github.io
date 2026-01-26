@@ -677,7 +677,7 @@ img.bw {
   }
   .speakers-grid-item {
     width: 45%;
-    height: auto;          /* 🔑 let content decide */
+    height: auto;          
     padding: 10px 10px;
   }
   #banner img{
