@@ -23,6 +23,7 @@ body {
 
 :root {
   --hermes-25-futuredusk: rgb(76, 85, 120);
+  --hermes-25-futuredusk-light: rgb(98, 109, 156);
   --hermes-25-futuredusk-dark: rgb(37, 41, 59);
   --hermes-25-celadon: rgb(190, 229, 191);
   --bright-text: rgb(255, 255, 255, 0.75);
@@ -77,7 +78,7 @@ button:hover {
 }
 
 #basic-info h1{
-    font-size: 40px;
+    font-size: 60px;
     
 }
 
@@ -198,17 +199,18 @@ button:hover {
 
 #scope-title {
     width: 100%;
-    background-color: var(--hermes-25-futuredusk);
+    background-color: var(--hermes-25-futuredusk-light);
     background-image: url("./img/phobos_blur.png");
+    background-image: url("./img/banner_icra_ws_resized.png");
     background-blend-mode: multiply;
     background-size: cover;
-    background-position: center;
+    background-position: 50% 70%;
     color: rgb(228, 228, 228);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    padding: 40px 0;  /* vertical padding */
+    padding: 100px 0;  /* vertical padding */
     margin: 0;         /* remove top margin */
 } 
 #scope-title .inner-container {
