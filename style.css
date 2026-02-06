@@ -661,6 +661,15 @@ img.bw {
   filter: grayscale(100%) contrast(120%) brightness(90%);
 }
 
+.date-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted #a7a7a7; /* Optional: adds a visual guide */
+    padding: 5px 0;
+    max-width: 550px;
+    gap: 20px;
+}
+
 @media screen and (max-width: 1000px) {
   .bar-container,
   .objectives-header,
