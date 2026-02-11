@@ -73,13 +73,12 @@ button:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding-bottom: 20px;
     color: var(--hermes-text);
 }
 
 #basic-info h1{
     font-size: 60px;
-    
 }
 
 #basic-info h2{
@@ -228,7 +227,7 @@ button:hover {
     
     max-width: 1200px;              /* contained like page content */
     width: 100%;
-    margin: 40px auto;              /* center and add vertical spacing */
+    margin: 0px auto;              /* center and add vertical spacing */
     
 
     display: flex;
@@ -499,12 +498,50 @@ button:hover {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 20px 0;
+    padding: 00px 0;
   }
 
   .sponsor-logos img{
-    width: 200px;
+    width: 300px;
   }
+
+  /* NEWS BAR */
+#news {
+  margin: 18px 0;
+  padding: 14px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(227,234,247,0.9), rgba(240,245,252,0.95)); /* soft gray-blue */
+  box-shadow: 0 4px 12px rgba(20,30,50,0.06);
+}
+
+#news .news-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#news h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+  color: var(--hermes-25-futuredusk-dark);
+}
+
+.news-list {
+  margin: 0;
+  padding-left: 1.1em; /* keep bullets aligned */
+}
+
+.news-item {
+  margin: 6px 0;
+  font-size: 0.98rem;
+  color: #24303f;
+}
+
+.news-date {
+  font-weight: 600;
+  color: var(--hermes-25-futuredusk);
+  margin-right: 8px;
+  font-variant-numeric: tabular-nums;
+}
 
 /*--- OBJECTIVES AND TOPICS ---*/
 
