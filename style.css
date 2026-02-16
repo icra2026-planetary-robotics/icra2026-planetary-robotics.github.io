@@ -709,6 +709,21 @@ img.bw {
     gap: 20px;
 }
 
+.sponsor-logos {
+    display: flex;
+    align-items: center; /* Initial vertical centering */
+    gap: 20px;           /* Space between logos */
+}
+
+/* Individual adjustments */
+.logo-redwire {
+    transform: scale(1.0) translateY(21px); /* Adjust these two */
+}
+
+.logo-nordspace {
+    transform: scale(1.0) translateY(0px); /* Adjust these two */
+}
+
 @media screen and (max-width: 1000px) {
   .bar-container,
   .objectives-header,
