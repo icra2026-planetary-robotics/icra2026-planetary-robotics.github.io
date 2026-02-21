@@ -489,7 +489,7 @@ button:hover {
   }
 
   .sponsor-grid p{
-    padding: 20px;
+    padding: 0px;
   }
 
   .sponsor-logos {
@@ -497,8 +497,8 @@ button:hover {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 00px 0;
+    gap: 90px;
+    padding: 0px 0px 50px 0px;
   }
 
   .sponsor-logos img{
@@ -709,11 +709,6 @@ img.bw {
     gap: 20px;
 }
 
-.sponsor-logos {
-    display: flex;
-    align-items: center; /* Initial vertical centering */
-    gap: 20px;           /* Space between logos */
-}
 
 /* Individual adjustments */
 .logo-redwire {
@@ -879,7 +874,10 @@ img.bw {
     font-size: 14px;
   }
   .sponsor-logos {
-    gap: 20px;
-    padding: 20px 0;
+    display: flex;       
+    align-items: center;  
+    justify-content: center;
+    gap: 100px;            
+    flex-wrap: wrap;
   }
 }
