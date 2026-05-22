@@ -426,6 +426,53 @@ button:hover {
     font-weight: bold;
   }
 
+  .pgi-title-poster {
+    padding-top: 8px;
+    padding-bottom: 2px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(10, 10, 10, 0.82);
+    margin-left: 0.5rem;
+  }
+
+  .pgi-info-poster {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 14px;
+    color: rgba(40, 40, 40, 0.75);
+    margin-left: 0.75rem;
+  }
+
+  .pgi-speaker-poster,
+  .pgi-media-poster {
+    font-size: 14px;
+    color: rgba(40, 40, 40, 0.75);
+  }
+
+  .pgi-media-poster a {
+    color: var(--hermes-25-futuredusk-dark);
+    text-decoration: underline;
+  }
+
+  #program .pgi-media-poster a,
+  #program .pgi-media-poster a:link,
+  #program .pgi-media-poster a:visited {
+    color: var(--hermes-25-futuredusk-dark) !important;
+  }
+
+  #program .pgi-media a,
+  #program .pgi-media a:link,
+  #program .pgi-media a:visited {
+    color: var(--hermes-25-futuredusk-light) !important;
+  }
+
+  .pgi-media-poster {
+    color: var(--hermes-25-futuredusk-light);
+  }
+
   .pgi-speaker{
     font-size: 16px;
   }
@@ -645,7 +692,7 @@ button:hover {
     padding: 5px;
   }
 
-  #call-for-papers objectives {}
+  /* removed empty selector */
 
 
 #organizers {
